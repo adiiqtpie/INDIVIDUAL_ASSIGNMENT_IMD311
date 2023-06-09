@@ -1,0 +1,264 @@
+<html>
+<head>
+<title> EDUCATION </title>
+  <link rel="stylesheet" href="ASSESST/CSS/style.css">
+<link rel="icon" type="image/x-icon" href="ASSESST/IMAGE/FAVICON.png">
+</head>
+
+<body>
+
+<header>
+<br>
+<CENTER>
+<img src="ASSESST/IMAGE/MY_LOGO.png" size="10px" WIDTH="100%" HEIGHT="30%">
+</CENTER>
+</header>
+<BR>
+<!------------------------ HEADER YG KAT ATAS TU ---------------------->
+
+<div class="topnav" id="navbar">
+  <a class="active" href="index.html"><img src="ASSESST/IMAGE/home_logo.png" width="30px"> </a>
+  <a href="about_me.html">ABOUT ME</a>
+  <a href="education.html">EDUCATION</a>
+  <a href="work.html"> WORK </a>
+  <a href="experience.html"> EXPERIENCE </a>
+  <a href="momento.html">MOMENTO</a>
+  <a href="service.html">SERVICE</a>
+  <a href="contact_me.html">CONTACT ME</a>
+</div>
+
+<!------------------------ HEADER YG KAT ATAS TU ---------------------->
+
+<BR>
+
+<!----------------------------------- ANCHOR ------------------------------>
+
+<a name="TOP_PAGE"></a>
+<a href="#BOTTOM_PAGE">
+<img
+<img src="ASSESST/IMAGE/ARROW_DOWN.png" "30PX" width="7%" align="right"> </a>
+
+<!----------------------------------- ANCHOR ------------------------------>
+<!--------------------------- java -------------------------------->
+
+<script>
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+<!-------------------------------------- java ---------------------------->
+<!---------------------------------- NESTLED LIST ------------------------->
+
+
+<tr>
+    <th> 
+	<h2>List of school that i go from primary school until university:</h2>
+
+<font="arial">
+<ul>
+  <li><b>Primary School</b></li>
+      <ul>
+      <li>Sekolah Kebangsaan Taman Bukit Tiram, Johor</li>
+    </ul>
+
+<br>
+
+  <li><b>Secondary School</b></li>
+    <ol type="1">
+      <li>Sekolah Menengah Kebangsaan Ulu Tiram</li>
+      <li>Sekolah Menengah Kebangsaan Bandar Sri Damansara (2)</li>
+      <li>Sekolah Menengah Kebangsaan Bandar Sri Damansara (1)</li>
+    </ol>
+ 
+<br>
+
+  <li><b>University</b></li>
+    <ul style="square">
+      <li>Universti Teknologi MARA (UiTM) - Diploma in Library Management</li>
+    </ul>
+</th>
+
+<!---------------------------------- NESTLED LIST ------------------------->
+
+<br>
+
+<!-------------------------------- HTML ----------------------------------->
+
+<h2> MY EDUCATION BACKGROUND </h2>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('Primary')"> Primary</button>
+  <button class="btn" onclick="filterSelection('Secondary')"> Secondary</button>
+  <button class="btn" onclick="filterSelection('University')"> University</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column Primary">
+    
+<div class="content">
+      <img src="ASSESST/IMAGE/SKTBT.png" alt="SKTBT" style="width:100%">
+      <h5>SEKOLAH KEBANGSAAN TAMAN BUKIT TIRAM</h5>
+      <h4>Adibah was a regular student at Sekolah Kebangsaan Taman Bukit Tiram from Year 1 to Year 6. She is dedicated to her studies and shows a willingness to learn. This school were located at Jalan Banang 2, Taman Bukit Tiram, Ulu Tiram, Johor Bahru, Johor.</h4>
+    </div>
+  </div>
+
+  <div class="column Secondary">
+    <div class="content">
+      <img src="ASSESST/IMAGE/SMKBSD2.png" alt="SMKBSD2" style="width:100%">
+      <h5>SEKOLAH MENENGAH KEBANGSAAN BANDAR SRI DAMANSARA (2)</h5>
+      <h4>Adibah was a prefect at Sekolah Menengah Kebangsaan Taman Bandar Sri Damansara (2) from Form 1 until Form 3. However she moved to another secondary school when she were in Form 4. She taken her Pentaksiran Tingkatan 3 (PT3) in this school. This school were located at Persiaran Meranti, Petaling Utama, Selangor. </h4>
+    </div>
+ </div>
+
+  <div class="column Secondary">
+    <div class="content">
+      <img src="ASSESST/IMAGE/SMKBSD1.png" alt="SMKBSD1" style="width:100%">
+      <h5>SEKOLAH MENENGAH KEBANGSAAN BANDAR SRI DAMANSARA (1)</h5>
+      <h4>Adibah was a regular student at Sekolah Menengah Kebangsaan Taman Bandar Sri Damansara (1) from Form 4 until Form 4. She taken her Sijil Pelajaran Malaysia (SPM) in this school. This school were located at Persiaran Perdana, Petaling Utama, Selangor. </h4>
+    </div>
+  </div>
+
+  <div class="column University">
+    <div class="content">
+      <img src="ASSESST/IMAGE/UITM_EDU.png" alt="University" style="width:100%">
+     <h5> UNIVERSITI TEKNOLOGI MARA (UITM) MERBOK, KEDAH </h5>
+      <h4>Adibah are now student at Universiti Teknologi MARA (UITM) Kedah. She is currently studying Diploma under course Library Management. This year (2023), she were in her last semester. This university were located at Mukim Bujang (between Semeling and Merbok), which is located about 14 kilometers from Sungai Petani. </h4>
+    </div>
+  </div>
+ 
+<!-- END GRID -->
+</div>
+
+<!-------------------------------- HTML ----------------------------------->
+
+
+<!-------------------------------- JAVA ----------------------------------->
+
+<SCRIPT>
+
+filterSelection("all") // Execute the function and show all columns
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+
+</SCRIPT>
+
+<!-------------------------------- JAVA ----------------------------------->
+
+<BR><BR>
+
+<!------------------------------ EMBEDDED UITM KEDAH VIEW ------------------>
+
+<table align="center">
+<tr>
+<td>
+<hr>
+<marquee direction="DOWN"> <h1> SNEAK - A - PEEK OF ADIBAH CAMPUS </h1> </marquee>
+<hr>
+<br>
+</td>
+</tr>
+</table>
+
+<br><br>
+
+<center>
+<iframe width="600" height="350" src="https://www.youtube.com/embed/14NHWKwFWaU" title="YouTube video player" frameborder="20" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+
+
+<br><br><br>
+
+<!----------------------------------- ANCHOR ------------------------------>
+<a name="BOTTOM_PAGE"></a>
+<a href="#TOP_PAGE">
+<img
+<img src="ASSESST/IMAGE/ARROW_UP.png" height="50PX" width="7%" align="right"></a>
+<BR>
+<!----------------------------------- ANCHOR ------------------------------>
+
+<BR>
+<BR>
+<BR>
+
+<!-------------------------------- FOOTER --------------------------------->
+
+<footer align="center"><FONT SIZE="6PX">
+<br>
+	<a name="WHATSAPP">   </a>
+<a href="https://wa.link/xkaeco" target="_blank"> <img src="ASSESST/IMAGE/WHATSAPP.png" width="3%"> </a>
+
+	<a name="INSTAGRAM">   </a>
+<a href="https://www.instagram.com/adiiqtpie/" target="_blank"> <img src="ASSESST/IMAGE/INSTAGRAM.png" width="3%"> </a>
+
+	<a name="TIKTOK">   </a>
+<a href="https://www.tiktok.com/@adiiqtpie" target="_blank"> <img src="ASSESST/IMAGE/TIKTOK.png" width="3%"> </a>
+
+  <p> Copyright by @ Adibah Hamami 2023 </p>
+</footer>
+
+<!-------------------------------- FOOTER --------------------------------->
+
+</body>
+</html>

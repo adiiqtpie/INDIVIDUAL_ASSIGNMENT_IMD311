@@ -1,0 +1,365 @@
+<html>
+<head>
+<title> ABOUT ME </title>
+  <link rel="stylesheet" href="ASSESST/CSS/style.css">
+<link rel="icon" type="image/x-icon" href="ASSESST/IMAGE/FAVICON.png">
+</head>
+
+<body>
+
+<header>
+<br>
+<CENTER>
+<img src="ASSESST/IMAGE/MY_LOGO.png" size="10px" WIDTH="100%" HEIGHT="30%">
+</CENTER>
+</header>
+<BR>
+<!------------------------ HEADER YG KAT ATAS TU ---------------------->
+
+<div class="topnav" id="navbar">
+  <a class="active" href="index.html"><img src="ASSESST/IMAGE/home_logo.png" width="30px"> </a>
+  <a href="about_me.html">ABOUT ME</a>
+  <a href="education.html">EDUCATION</a>
+  <a href="work.html"> WORK </a>
+  <a href="experience.html"> EXPERIENCE </a>
+  <a href="momento.html">MOMENTO</a>
+  <a href="service.html">SERVICE</a>
+  <a href="contact_me.html">CONTACT ME</a>
+</div>
+
+<!------------------------ HEADER YG KAT ATAS TU ---------------------->
+
+<BR>
+
+<!----------------------------------- ANCHOR ------------------------------>
+
+<a name="TOP_PAGE"></a>
+<a href="#BOTTOM_PAGE">
+<img
+<img src="ASSESST/IMAGE/ARROW_DOWN.png" "30PX" width="7%" align="right"> </a>
+
+<!----------------------------------- ANCHOR ------------------------------>
+
+<!--------------------------- java -------------------------------->
+
+
+<!-------------------------------------- java ---------------------------->
+
+ <h1> <font size="30px"><marquee width="100%" behavior="alternate"> Come, learn a bit about me ! </marquee></font> </h1> 
+
+<!---------------------------------- SLIDESHOW ----------------------------->
+
+<!---------------------------------- html -------------------------------->
+
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <center><img src="ASSESST/IMAGE/ADIBAH.jpg" widht="100%" height="45%"></center>
+    <div class="text">This is me, Adibah Hamami</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <center><img src="ASSESST/IMAGE/ADIBAH2.jpg" widht="100%" height="45%"></center>
+    <div class="text">She is a cutie if you ask me </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <center><img src="ASSESST/IMAGE/ADIBAH3.jpg" widht="100%" height="45%"></center>
+    <div class="text">She is pretty lovely no lies </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <center><img src="ASSESST/IMAGE/ADIBAH4.jpg" widht="100%" height="45%"></center>
+    <div class="text">She can be weird and creepy sometimes </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <center><img src="ASSESST/IMAGE/ADIBAH5.jpg" widht="100%" height="45%"></center>
+    <div class="text">But she is phenomenal, I promise ! </div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+<!------------------------------ end of html ------------------------------>
+
+<!----------------------------- java script ------------------------------>
+
+<script>
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+<!------------------------------ end of java script ------------------------>
+
+<br>
+
+<!----------------------------- ABOUT ME -------------------------------->
+
+<br><Br>
+
+<table style="width:70%" align="center" cellspadding="30px" cellspacing="10px" BGCOLOR=" #845D58 ">
+
+
+  <tr>
+    <th> <font="arial"><p>  There is this one verse from Al-Quran that captivated her heart, <span id="dots"></span><span id="more">
+
+<br><br><br>
+
+"Allah is the Light of the heavens and the earth. The example of His light is like a niche within which is a lamp, the lamp is within glass, the glass as if it were a pearly [white] star lit from [the oil of] a blessed olive tree, neither of the east nor of the west, whose oil would almost glow even if untouched by fire. Light upon light. Allah guides to His light whom He wills. And Allah presents examples for the people, and Allah is Knowing of all things." (Quran 24:35)
+
+</span></font></p>
+
+<button onclick="myFunction()" id="myBtn">Read more</button>
+</th>
+</table>
+
+<!-------------------------------end about me ----------------------------> 
+
+<! ----------------------- java about me --------------------------------->
+
+<script>
+
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+</script>
+
+<! ----------------------- java about me --------------------------------->
+
+<!-------------------------- MY BIODATA ------------------------------>
+
+<br><br>
+
+<table border="3px" width="50%" cellpadding="10px" cellspacing="5px" align="center">
+
+  <tr> 
+ <th rowspan="2" bgcolor="#845D58  "> <i> Full Name </i> </th> 
+</tr> 
+<tr> 
+  <td> <br> Adibah Nur Binti Hamami </td> 
+ </tr>
+
+  <tr> 
+ <th rowspan="2" bgcolor="#845D58  "> <i> Age </i> </th> 
+</tr> 
+<tr> 
+  <td> <br> 20 years old (2023) </td> 
+ </tr>
+
+<tr> 
+ <th rowspan="2" bgcolor="#845D58  "> <i> Date of Birth </i> </th> 
+</tr> 
+<tr> 
+  <td> <br> 8 July 2023 </td> 
+ </tr>
+
+<tr> 
+ <th rowspan="2" bgcolor="#845D58  "> <i> Childhood and Background </i> </th> 
+</tr> 
+<tr> 
+  <td> <br> I was born and raised in Johor Bahru, Johor. I lived my life in Johor Bharu until I am 13 years old where I have to follow my family moved to Selangor. I stay in Selangor until I finish my SPM. Only then I moved back to Johor Bahru.  </td> 
+  </tr>  
+  
+<tr> 
+ <th rowspan="2" bgcolor="#845D58  "> <i> Hobbies </i> </th> 
+</tr> 
+<tr> 
+  <td> <br> Due to my family habit, I deeply enjoy reading any books. My parents have raised me to love reading books since I was kids. My mom love to read and collects novel, most of it are romance novel. My dad also love to read. He read magazine such as, "Reader's Digest". Most of the time he read it in toilet.  </td> 
+ </tr> 
+ 
+<tr> 
+ <th rowspan="2" bgcolor="#845D58  "> <i> Education and Intellectual Curiosity </i> </th> 
+</tr> 
+<tr> 
+  <td> <br> I am deeply interested in pursuing education. I grew up learning that education is extremely important. I found that knowledge are powerful. Plus I hate working, so I probably would further my studies untill I can't. I really enjoy meeting knew people while I am in learning process.</td> 
+ </tr> 
+ 
+<tr> 
+ <th rowspan="2" bgcolor="#845D58  "> <i> Identity and Personal Traits </i> </th> 
+</tr> 
+<tr> 
+  <td> <br> I am bossy, independant, and has a good survival skill. </td> 
+ </tr>  
+ 
+<tr> 
+ <th rowspan="2" bgcolor="#845D58  "> <i> Challenges and Growth </i> </th> 
+</tr> 
+<tr> 
+  <td> <br> Within the crucible of challenges, resilience is forged, and growth emerges. Through adversity, I have learned valuable lessons, discovered inner strength, and honed my character. These experiences have fortified my resolve and equipped me with the tools to navigate the complexities of life. I lack of communication skill but after I graduated from high school, I improved my communication skill by doing presentation for my assignments in university.  </td> 
+ </tr>  
+<br>
+
+</TABLE>
+
+<!-------------------------- MY BIODATA ------------------------------>
+<br>
+
+<h1> <font size="30px"><marquee width="100%" behavior="alternate"> MY FAMILY PICTURE </marquee></font> </h1>
+
+<div class="scroll-container">
+ 
+  <img src="ASSESST/IMAGE/10.jpg" width="55%" height="50%">
+
+  <img src="ASSESST/IMAGE/20.jpg" width="55%" height="50%">
+
+  <img src="ASSESST/IMAGE/30.jpg" width="55%" height="50%">
+
+   <img src="ASSESST/IMAGE/40.jpg" width="55%" height="50%">
+
+  <img src="ASSESST/IMAGE/50.jpg" width="55%" height="50%">
+
+  <img src="ASSESST/IMAGE/60.jpg" width="55%" height="50%">
+
+</div>
+
+<br><br>
+
+
+
+<br><br>
+
+<h1> <font size="30px"><marquee width="100%" behavior="alternate"> My Famiglia ! </marquee></font> </h1> 
+
+<br><br>
+
+<table border="3px" width="60%" cellpadding="10px" cellspacing="5px" align="center">
+
+<tr> 
+    <td colspan="4" height="50%" align="center"> <img src="ASSESST/IMAGE/famiglia.jpg" height="300px" border="8" border style="color:#E5E8E8 ;"> </td>
+  </tr>
+
+  <tr align="center" bgcolor="#130806  "> 
+    <td rowspan="6"> My Family </td>
+    <td colspan="2"> Name </td>
+    <td> Relationship </td>
+  </tr>
+
+<!-------------------------------- AYAH -------------------------------->
+  <tr align="center">
+    <td> 1 </td>
+    <td> Hamami bin Mohamad </td>
+    <td> Father </td>
+  </tr>
+
+<!-------------------------------- DIBUU --------------------------------->
+  <tr align="center"> 
+    <td> 2 </td>
+    <td> Jainah binti Arshad </td>
+    <td> Mother </td>
+  </tr>
+
+<!--------------------------------- IMAN -------------------------------->
+  <tr align="center">
+    <td> 3 </td>
+    <td> Nuraiman binti Hamami </td>
+    <td> Little Sister </td>
+  </tr>
+
+<!--------------------------------- ABE -------------------------------->
+  <tr align="center"> 
+    <td> 4 </td>
+    <td> Akmal Aqil bin Hamami </td>
+    <td> Little Brother </td>
+  </tr>
+
+<!--------------------------------- AJIM -------------------------------->
+  <tr align="center"> 
+    <td> 5 </td>
+    <td> Aqmal Azeem bin Hamami </td>
+    <td> Little Brother </td>
+  </tr>
+
+</table>
+
+<!----------------------------------- ANCHOR ------------------------------>
+<a name="BOTTOM_PAGE"></a>
+<a href="#TOP_PAGE">
+<img
+<img src="ASSESST/IMAGE/ARROW_UP.png" height="50PX" width="7%" align="right"></a>
+<BR>
+<!----------------------------------- ANCHOR ------------------------------>
+
+<BR>
+<BR>
+<BR>
+
+<!-------------------------------- FOOTER --------------------------------->
+
+<footer align="center"><FONT SIZE="6PX">
+<br>
+	<a name="WHATSAPP">   </a>
+<a href="https://wa.link/xkaeco" target="_blank"> <img src="ASSESST/IMAGE/WHATSAPP.png" width="3%"> </a>
+
+	<a name="INSTAGRAM">   </a>
+<a href="https://www.instagram.com/adiiqtpie/" target="_blank"> <img src="ASSESST/IMAGE/INSTAGRAM.png" width="3%"> </a>
+
+	<a name="TIKTOK">   </a>
+<a href="https://www.tiktok.com/@adiiqtpie" target="_blank"> <img src="ASSESST/IMAGE/TIKTOK.png" width="3%"> </a>
+
+  <p> Copyright by @ Adibah Hamami 2023 </p> 
+</footer>
+
+<!-------------------------------- FOOTER --------------------------------->
+
+</body>
+</html>
